@@ -1,3 +1,9 @@
+export interface Sortable{
+    length: number
+    compare(left: number, right: number): boolean
+    swap(left: number, right: number): void
+}
+
 export abstract class BubbleSorter {
     abstract compare(i: number, j:number):boolean
     abstract swap(i: number, j:number):void
